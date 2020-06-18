@@ -65,8 +65,8 @@ describe('enhancer', () => {
     // object that takes an item and returns a new item with the name property
     describe('get', () => {
         describe('should modify name with enhancement value', () => {
-            let itemName = 'master sword'
-            let item = {
+            const itemName = 'master sword'
+            const item = {
                 name: itemName,
                 durability: 90,
                 enhancement: 14
@@ -75,8 +75,8 @@ describe('enhancer', () => {
             expect(getItem.name).toBe(`[+${getItem.enhancement}] ${itemName}`)
         })
         describe('should modify name with enhancement value', () => {
-            let itemName = 'master sword'
-            let item = {
+            const itemName = 'master sword'
+            const item = {
                 name: itemName,
                 durability: 90,
                 enhancement: 0
